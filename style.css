@@ -1,0 +1,81 @@
+* {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: startFade 1s;
+}
+
+.btn {
+    transition: 0.5s all ease-out;
+    font-size: 125%;
+    border-radius: 5px;
+    border: 5px;
+    outline: solid;
+    outline-width: 3px;
+    outline-color: white;
+    width: 150px;
+    height: 40px;
+}
+
+.btn:hover {
+    outline-color: greenyellow;
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.btn:active {
+    transition: 0.1s all linear;
+    filter: brightness(70%);
+    scale: 1;
+}
+
+.typeWriter {
+    overflow: hidden;
+    border-right: 1.5em solid yellowgreen;
+    border-right-width: 0.1em;
+    white-space: nowrap;
+    animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
+    font-size: 1.6rem;
+    width: 0;
+}
+
+.container {
+    display: inline-block;
+}
+
+@keyframes startFade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinking {
+    from {
+        border-color: transparent;
+    }
+
+    to {
+        border-color: greenyellow;
+    }
+}
