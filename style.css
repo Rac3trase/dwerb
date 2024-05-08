@@ -79,3 +79,7 @@ body {
         border-color: greenyellow;
     }
 }
+
+title {
+    display: none;
+}
